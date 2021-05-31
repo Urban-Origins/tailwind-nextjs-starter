@@ -18,6 +18,8 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        body: 'Rota',
+        header: 'Gangster Grotesk',
       },
       colors: {
         blue: colors.lightBlue,
@@ -29,6 +31,32 @@ module.exports = {
           blue: '#93ddfd',
           white: '#fff',
         },
+        brand: {
+          green: '#577557',
+          beige: '#FFF7E6',
+          brown: '#493B36',
+          gray: '#eae6e1',
+        },
+      },
+      backgroundImage: {
+        'login-cover':
+          "linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/login-cover.jpg')",
+        'bag-cover':
+          "linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/bag-cover.jpg')",
+      },
+      keyframes: {
+        fadeDown: {
+          '0%': {
+            opacity: 0,
+            transform: 'translateY(-20px)',
+          },
+        },
+      },
+      animation: {
+        fadeDown: 'fadeDown 0.3s ease-out',
+      },
+      transformOrigin: {
+        'radix-popover-content': 'var(--radix-popover-content-transform-origin)',
       },
     },
   },
